@@ -11,8 +11,8 @@
     "name":             "mapType",
     "shortDescription": "Currently selected map type for flight maps",
     "type":             "uint32",
-    "enumStrings":      "Street Map,Satellite Map,Hybrid Map,Terrain Map",
-    "enumValues":       "0,1,2,3",
+    "enumStrings":      "Street Map,Satellite Map,Hybrid Map,Terrain Map,Own Map",
+    "enumValues":       "0,1,2,3,4",
     "defaultValue":     2
 }
 ]

@@ -74,6 +74,7 @@ public:
         MapboxPirates           = 6011,
         MapboxEmerald           = 6012,
         MapboxHighContrast      = 6013,
+        MapboxOwn               = 6014,
 
         EsriWorldStreet         = 7000,
         EsriWorldSatellite      = 7001,

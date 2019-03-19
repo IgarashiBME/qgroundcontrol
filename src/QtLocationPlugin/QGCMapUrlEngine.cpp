@@ -117,6 +117,7 @@ UrlFactory::getImageFormat(MapType type, const QByteArray& image)
                 case MapboxPirates:
                 case MapboxEmerald:
                 case MapboxHighContrast:
+                case MapboxOwn:
                 case GoogleSatellite:
                 case BingSatellite:
                 case BingHybrid:
@@ -362,6 +363,7 @@ UrlFactory::_getURL(MapType type, int x, int y, int zoom, QNetworkAccessManager*
     case MapboxPirates:
     case MapboxEmerald:
     case MapboxHighContrast:
+    case MapboxOwn:
     {
         QString mapBoxToken = qgcApp()->toolbox()->settingsManager()->appSettings()->mapboxToken()->rawValue().toString();
         if(!mapBoxToken.isEmpty()) {
@@ -408,6 +410,9 @@ UrlFactory::_getURL(MapType type, int x, int y, int zoom, QNetworkAccessManager*
                     break;
                 case MapboxHighContrast:
                     server += "mapbox.high-contrast";
+                    break;
+                case MapboxOwn:
+                    server += "igarashi.au0ds6mf";
                     break;
                 default:
                     return QString::null;
@@ -649,6 +654,7 @@ UrlFactory::averageSizeForType(MapType type)
     case MapboxHybrid:
     case MapboxPirates:
     case MapboxWheatPaste:
+    case MapboxOwn:
     default:
         break;
     }

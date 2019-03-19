@@ -165,6 +165,7 @@ QGeoTiledMappingManagerEngineQGC::QGeoTiledMappingManagerEngineQGC(const QVarian
     mapTypes << QGCGEOMAPTYPE(QGeoMapType::CustomMap,         "Mapbox Pencil Map",        "Mapbox Pencil Map",            false,  false,  UrlFactory::MapboxPencil);
     mapTypes << QGCGEOMAPTYPE(QGeoMapType::CustomMap,         "Mapbox Pirates Map",       "Mapbox Pirates Map",           false,  false,  UrlFactory::MapboxPirates);
     mapTypes << QGCGEOMAPTYPE(QGeoMapType::CustomMap,         "Mapbox Emerald Map",       "Mapbox Emerald Map",           false,  false,  UrlFactory::MapboxEmerald);
+    mapTypes << QGCGEOMAPTYPE(QGeoMapType::CustomMap,         "Mapbox Own Map",       "Mapbox Own Map",           false,  false,  UrlFactory::MapboxOwn);
 
     setSupportedMapTypes(mapTypes);
 

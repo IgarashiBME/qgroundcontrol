@@ -83,7 +83,8 @@ stQGeoTileCacheQGCMapTypes kMapboxTypes[] = {
     {"Mapbox Run, Byke and Hike Map",   UrlFactory::MapboxRunBikeHike},
     {"Mapbox Pencil Map",       UrlFactory::MapboxPencil},
     {"Mapbox Pirates Map",      UrlFactory::MapboxPirates},
-    {"Mapbox Emerald Map",      UrlFactory::MapboxEmerald}
+    {"Mapbox Emerald Map",      UrlFactory::MapboxEmerald},
+    {"Mapbox Own Map",          UrlFactory::MapboxOwn}
 };
 
 #define NUM_MAPBOXMAPS (sizeof(kMapboxTypes) / sizeof(stQGeoTileCacheQGCMapTypes))
